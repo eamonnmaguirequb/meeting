@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Scheduler">
+  <DataContextMoniker Name="/SchedulerDataContext" />
+  <nestedChildShapes>
+    <classShape Id="e21aa8c9-86d0-4847-b4b7-02bdbc9d7010" absoluteBounds="0.5, 0.625, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/SchedulerDataContext/Event" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3bbd0036-9edf-4fdc-acde-328286496832" absoluteBounds="0.51500000000000012, 1.085, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6d7e0b58-864e-4715-af45-1fabae0d601d" absoluteBounds="2.875, 1.375, 2, 3.1170068359375">
+      <DataClassMoniker Name="/SchedulerDataContext/User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e63a58c7-b10d-4779-b533-8441c01716cd" absoluteBounds="2.8899999999999997, 1.835, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c37bad11-d91c-4f49-8df7-c731b28b5267" absoluteBounds="0.5, 3.375, 2, 1.9631982421875">
+      <DataClassMoniker Name="/SchedulerDataContext/Charity" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e64e389c-5572-47da-aefa-57f582be1d44" absoluteBounds="0.51499999999999968, 3.835, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

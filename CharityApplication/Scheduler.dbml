@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="charitySQL" Class="SchedulerDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\charitySQL.mdf;Integrated Security=True" SettingsObjectName="CharityApplication.Properties.Settings" SettingsPropertyName="charitySQLConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Events" Member="Events">
+    <Type Name="Event">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="text" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="start_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="end_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="userID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Events" Member="Users">
+    <Type Name="User">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="userEmail" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="userPassword" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="userForename" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="userSurname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="userVolunteer" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="userStore" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="userSkillSet" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="userPostcode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="imagePath" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="userCreation" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="charityUmbrella" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Charity" Member="Charities">
+    <Type Name="Charity">
+      <Column Name="charityId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="charityOrganiser" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="charityMessage" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="charityName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="charityLocation" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="charityImage" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

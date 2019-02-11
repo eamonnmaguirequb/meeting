@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="charitySQL" Class="eventCalendarDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\charitySQL.mdf;Integrated Security=True" SettingsObjectName="CharityApplication.Properties.Settings" SettingsPropertyName="charitySQLConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.CharityEvent" Member="CharityEvents">
+    <Type Name="CharityEvent">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="eventManagement" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="eventName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="eventStartDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="eventEndDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="eventDescription" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="eventLocation" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="eventImagePath" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CharityEventUser" Member="CharityEventUsers">
+    <Type Name="CharityEventUser">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="charityID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="eventID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="userID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
